@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   // Base URL para GitHub Pages
-  base: '/',
+  base: '/Cimdol/',
   
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
