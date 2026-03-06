@@ -5,7 +5,7 @@
     <title>CIMDOL</title>
     <script>
       // Redirige rutas SPA a index.html preservando el path
-      var pathSegmentsToKeep = 1; // 1 porque tienes /Cimdol/ como base
+      var pathSegmentsToKeep = 0; // 0 porque desplegamos en la raíz
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
