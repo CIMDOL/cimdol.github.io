@@ -87,12 +87,12 @@ export default function Home() {
               {
                 icon: Phone,
                 title: "Líneas de Atención",
-                detail: "+57 316 724 6758 | (2) 823-0000",
+                detail: "+57 302 272 5382 | 316246758 (Llamadas)",
               },
               {
                 icon: MapPin,
                 title: "Dirección",
-                detail: "Calle 5N # 20-29, Popayán, Cauca",
+                detail: "Calle 17 Norte # 9-99, Popayán, Cauca",
               },
             ].map(({ icon: Icon, title, detail }) => (
               <div
@@ -515,8 +515,8 @@ export default function Home() {
 
               <div className="space-y-5">
                 {[
-                  { icon: Phone, label: "Teléfono", value: "+57 316 724 6758" },
-                  { icon: MapPin, label: "Dirección", value: "Calle 5N # 20-29, Popayán, Cauca" },
+                  { icon: Phone, label: "Teléfono", value: "+57 3022725382" },
+                  { icon: MapPin, label: "Dirección", value: "Calle 17 Norte # 9-99, Popayán, Cauca" },
                   { icon: Clock, label: "Horario", value: "Lun – Vie: 8am – 6pm | Sáb: 8am – 12pm" },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label} className="flex items-start gap-4">
