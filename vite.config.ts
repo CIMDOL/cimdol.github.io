@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // Base URL para GitHub Pages
-  base: '/Cimdol/',
+  // Base URL para GitHub Pages (raíz porque el repo es cimdol.github.io)
+  base: '/',
   
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
