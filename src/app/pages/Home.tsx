@@ -4,6 +4,7 @@ import {
   Clock,
   Phone,
   MapPin,
+  Mail,
   Users,
   Award,
   Stethoscope,
@@ -14,7 +15,6 @@ import {
 import { HeroSection } from "../components/HeroSection";
 import { FeatureCard } from "../components/FeatureCard";
 import { DoctorCard } from "../components/DoctorCard";
-import { ContactForm } from "../components/ContactForm";
 import { doctors } from "../data/doctors";
 import { procedures } from "../data/procedures";
 import { ProcedureCard } from "../components/ProcedureCard";
@@ -62,7 +62,7 @@ export default function Home() {
         badge="Popayán, Colombia"
         headline="Inspirando una mejor salud, libre de dolor"
         subheadline="En CIMDOL contamos con los especialistas y procedimientos más avanzados para devolverte la calidad de vida que mereces. El dolor tiene solución."
-        ctaLabel="Agendar Cita"
+        ctaLabel="Contáctanos"
         ctaLink="/contacto"
         secondaryCtaLabel="Nuestros procedimientos"
         secondaryCtaLink="/procedimientos"
@@ -82,17 +82,17 @@ export default function Home() {
               {
                 icon: Clock,
                 title: "Horario de Atención",
-                detail: "Lun – Vie: 8am – 6pm | Sáb: 8am – 12pm",
+                detail: "Lun – Vie: 7am–12:30pm | 2pm–5:30pm",
               },
               {
                 icon: Phone,
                 title: "Líneas de Atención",
-                detail: "+57 302 272 5382 | 316246758 (Llamadas)",
+                detail: "302 272 5382 (WhatsApp) | 316 246 758 (Llamadas)",
               },
               {
                 icon: MapPin,
                 title: "Dirección",
-                detail: "Calle 17 Norte # 9-99, Popayán, Cauca",
+                detail: "Cl. 17 Nte. #9-99, Comuna 1, Popayán, Cauca",
               },
             ].map(({ icon: Icon, title, detail }) => (
               <div
@@ -461,10 +461,10 @@ export default function Home() {
               className="px-8 py-3.5 rounded-full bg-white font-semibold text-sm transition-all duration-200 hover:shadow-xl hover:scale-105"
               style={{ color: "#1B3A6B", fontFamily: "'DM Sans', sans-serif" }}
             >
-              Agendar cita ahora
+              Contáctanos
             </Link>
             <a
-              href="https://wa.me/573167246758"
+              href="https://wa.me/573022725382"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-full border-2 border-white/60 text-white font-semibold text-sm hover:bg-white/10 transition-all duration-200"
@@ -476,80 +476,163 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Contact Info Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span
+              className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4"
+              style={{
+                background: "rgba(0, 180, 200, 0.1)",
+                color: "#00B4C8",
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+            >
+              Contáctanos
+            </span>
+            <h2
+              className="text-[#1B3A6B]"
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                fontSize: "clamp(1.8rem, 3vw, 2.5rem)",
+                fontWeight: 700,
+              }}
+            >
+              Estamos aquí para ayudarte
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+            {/* Left: Contact info */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="space-y-4"
             >
-              <span
-                className="inline-block px-4 py-1.5 rounded-full text-sm font-medium mb-4"
-                style={{
-                  background: "rgba(0, 180, 200, 0.1)",
-                  color: "#00B4C8",
-                  fontFamily: "'DM Sans', sans-serif",
-                }}
+              {/* Teléfonos */}
+              <div
+                className="rounded-2xl p-5 flex items-start gap-4 bg-white"
+                style={{ border: "1px solid rgba(0,180,200,0.15)" }}
               >
-                Contáctanos
-              </span>
-              <h2
-                className="text-[#1B3A6B] mb-4"
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: "clamp(1.8rem, 3vw, 2.5rem)",
-                  fontWeight: 700,
-                }}
-              >
-                Estamos aquí para ayudarte
-              </h2>
-              <p
-                className="text-gray-600 mb-8 leading-relaxed"
-                style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem" }}
-              >
-                Completa el formulario y uno de nuestros especialistas se pondrá en contacto contigo a la brevedad posible.
-              </p>
+                <div
+                  className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(0, 180, 200, 0.12)" }}
+                >
+                  <Phone size={20} style={{ color: "#00B4C8" }} />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-xs mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>Teléfonos</p>
+                  <a
+                    href="tel:3162467580"
+                    className="block text-sm font-semibold text-[#1B3A6B] hover:text-[#00B4C8] transition-colors"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    316 246 758 — <span className="font-normal text-gray-500">solo llamadas</span>
+                  </a>
+                  <a
+                    href="https://wa.me/573022725382"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm font-semibold text-[#1B3A6B] hover:text-[#25D366] transition-colors mt-1"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    302 272 5382 — <span className="font-normal text-gray-500">solo WhatsApp</span>
+                  </a>
+                </div>
+              </div>
 
-              <div className="space-y-5">
-                {[
-                  { icon: Phone, label: "Teléfono", value: "+57 3022725382" },
-                  { icon: MapPin, label: "Dirección", value: "Calle 17 Norte # 9-99, Popayán, Cauca" },
-                  { icon: Clock, label: "Horario", value: "Lun – Vie: 8am – 6pm | Sáb: 8am – 12pm" },
-                ].map(({ icon: Icon, label, value }) => (
-                  <div key={label} className="flex items-start gap-4">
-                    <div
-                      className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: "rgba(0, 180, 200, 0.12)" }}
-                    >
-                      <Icon size={20} style={{ color: "#00B4C8" }} />
-                    </div>
-                    <div>
-                      <p className="text-gray-400 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>{label}</p>
-                      <p className="text-gray-800 text-sm font-medium" style={{ fontFamily: "'DM Sans', sans-serif" }}>{value}</p>
-                    </div>
-                  </div>
-                ))}
+              {/* Correo */}
+              <div
+                className="rounded-2xl p-5 flex items-start gap-4 bg-white"
+                style={{ border: "1px solid rgba(0,180,200,0.15)" }}
+              >
+                <div
+                  className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(0, 180, 200, 0.12)" }}
+                >
+                  <Mail size={20} style={{ color: "#00B4C8" }} />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-xs mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>Correo electrónico</p>
+                  <a
+                    href="mailto:citas.cimdol@gmail.com"
+                    className="block text-sm font-semibold text-[#1B3A6B] hover:text-[#00B4C8] transition-colors"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    citas.cimdol@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Dirección */}
+              <div
+                className="rounded-2xl p-5 flex items-start gap-4 bg-white"
+                style={{ border: "1px solid rgba(0,180,200,0.15)" }}
+              >
+                <div
+                  className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(0, 180, 200, 0.12)" }}
+                >
+                  <MapPin size={20} style={{ color: "#00B4C8" }} />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-xs mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>Dirección</p>
+                  <p className="text-sm font-semibold text-[#1B3A6B]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    Cl. 17 Nte. #9-99, Comuna 1
+                  </p>
+                  <p className="text-sm text-gray-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    Popayán, Cauca, Colombia
+                  </p>
+                </div>
+              </div>
+
+              {/* Horario */}
+              <div
+                className="rounded-2xl p-5 flex items-start gap-4 bg-white"
+                style={{ border: "1px solid rgba(0,180,200,0.15)" }}
+              >
+                <div
+                  className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(0, 180, 200, 0.12)" }}
+                >
+                  <Clock size={20} style={{ color: "#00B4C8" }} />
+                </div>
+                <div>
+                  <p className="text-gray-400 text-xs mb-1" style={{ fontFamily: "'DM Sans', sans-serif" }}>Horario de atención</p>
+                  <p className="text-sm font-semibold text-[#1B3A6B]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    Lunes a viernes
+                  </p>
+                  <p className="text-sm text-gray-500" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                    7:00am – 12:30pm &nbsp;|&nbsp; 2:00pm – 5:30pm
+                  </p>
+                </div>
               </div>
             </motion.div>
 
-            {/* Right: Form */}
+            {/* Right: Map */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl p-8 shadow-xl"
-              style={{ boxShadow: "0 10px 50px rgba(0, 0, 0, 0.08)" }}
+              className="rounded-3xl overflow-hidden shadow-xl"
+              style={{ minHeight: "380px" }}
             >
-              <h3
-                className="text-[#1B3A6B] mb-6"
-                style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.3rem" }}
-              >
-                Envíanos un mensaje
-              </h3>
-              <ContactForm />
+              <iframe
+                src="https://maps.google.com/maps?q=Cl+17+Norte+9-99+Popayan+Cauca+Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="380"
+                style={{ border: 0, display: "block" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación CIMDOL"
+              />
             </motion.div>
           </div>
         </div>

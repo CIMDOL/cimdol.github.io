@@ -67,16 +67,18 @@ export function Navbar() {
                 />
               </Link>
             ))}
-            <Link
-              to="/contacto"
+            <a
+              href="https://wa.me/573022725382"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:scale-105"
               style={{
                 background: "linear-gradient(135deg, #00B4C8 0%, #1B3A6B 100%)",
                 fontFamily: "'DM Sans', sans-serif",
               }}
             >
-              Agendar Cita
-            </Link>
+              Contacto
+            </a>
           </nav>
 
           {/* Social Icons + Mobile Menu Toggle */}
@@ -143,16 +145,18 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/contacto"
+              <a
+                href="https://wa.me/573022725382"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center px-5 py-3 rounded-full text-sm font-semibold text-white mt-4"
                 style={{
                   background: "linear-gradient(135deg, #00B4C8 0%, #1B3A6B 100%)",
                   fontFamily: "'DM Sans', sans-serif",
                 }}
               >
-                Agendar Cita
-              </Link>
+                Contacto
+              </a>
               <div className="flex items-center justify-center gap-4 pt-2">
                 <a href="https://facebook.com" className="text-[#1B3A6B]"><Facebook size={20} /></a>
                 <a href="https://instagram.com" className="text-[#1B3A6B]"><Instagram size={20} /></a>

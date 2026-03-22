@@ -113,29 +113,31 @@ export function Footer() {
                 <Phone size={16} className="text-[#00B4C8] mt-1 flex-shrink-0" />
                 <div>
                   <a
-                    href="tel:+573167246758"
+                    href="tel:3162467580"
                     className="text-blue-200 hover:text-white text-sm block transition-colors"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    +57 316 724 6758
+                    316 246 758 <span className="text-blue-400 text-xs">(llamadas)</span>
                   </a>
                   <a
-                    href="tel:+572823000"
+                    href="https://wa.me/573022725382"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-200 hover:text-white text-sm block transition-colors"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    (2) 823-0000
+                    302 272 5382 <span className="text-blue-400 text-xs">(WhatsApp)</span>
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={16} className="text-[#00B4C8] mt-1 flex-shrink-0" />
                 <a
-                  href="mailto:info@cimdol.com.co"
+                  href="mailto:citas.cimdol@gmail.com"
                   className="text-blue-200 hover:text-white text-sm transition-colors"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  info@cimdol.com.co
+                  citas.cimdol@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -144,7 +146,7 @@ export function Footer() {
                   className="text-blue-200 text-sm"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
-                  Calle 5N # 20-29, Popayán, Cauca, Colombia
+                  Cl. 17 Nte. #9-99, Comuna 1, Popayán, Cauca
                 </span>
               </li>
             </ul>

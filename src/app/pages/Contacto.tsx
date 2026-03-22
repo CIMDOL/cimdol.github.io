@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, MessageCircle, FileText } from "lucide-react";
-import { ContactForm } from "../components/ContactForm";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import fachada1 from "@assets/medicos/grupales/grupalesfach1.jpg";
 
@@ -74,9 +73,9 @@ export default function Contacto() {
               className="space-y-4"
             >
               {[
-                { icon: Phone, text: "+57 316 724 6758" },
-                { icon: MapPin, text: "Calle 5N # 20-29, Popayán" },
-                { icon: Clock, text: "Lun–Vie: 8am–6pm | Sáb: 8am–12pm" },
+                { icon: Phone, text: "316 246 758 (llamadas) · 302 272 5382 (WhatsApp)" },
+                { icon: MapPin, text: "Cl. 17 Nte. #9-99, Comuna 1, Popayán, Cauca" },
+                { icon: Clock, text: "Lun–Vie: 7:00am–12:30pm | 2:00pm–5:30pm" },
               ].map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">
                   <div
@@ -132,22 +131,9 @@ export default function Contacto() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-md w-full mx-auto lg:mx-0"
           >
-            {/* Contact Form Card */}
-            <div
-              className="bg-white rounded-3xl p-8 shadow-xl mb-8"
-              style={{ boxShadow: "0 10px 50px rgba(0, 0, 0, 0.08)" }}
-            >
-              <h3
-                className="text-[#1B3A6B] mb-6"
-                style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.4rem", fontWeight: 700 }}
-              >
-                Envíanos un mensaje
-              </h3>
-              <ContactForm compact />
-            </div>
-
             {/* Contact Info Cards */}
             <div className="grid grid-cols-1 gap-4 mb-6">
+              {/* Teléfonos */}
               <div
                 className="rounded-2xl p-5 flex items-start gap-4"
                 style={{ background: "white", border: "1px solid rgba(0,180,200,0.15)" }}
@@ -166,22 +152,25 @@ export default function Contacto() {
                     Teléfonos
                   </p>
                   <a
-                    href="tel:+573167246758"
+                    href="tel:3162467580"
                     className="block text-sm font-semibold text-[#1B3A6B] hover:text-[#00B4C8] transition-colors"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    +57 316 724 6758
+                    316 246 758 — <span className="font-normal text-gray-400">solo llamadas</span>
                   </a>
                   <a
-                    href="tel:+572823000"
-                    className="block text-sm text-gray-500 hover:text-[#00B4C8] transition-colors"
+                    href="https://wa.me/573022725382"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-sm font-semibold text-[#1B3A6B] hover:text-[#25D366] transition-colors mt-0.5"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    (2) 823-0000
+                    302 272 5382 — <span className="font-normal text-gray-400">solo WhatsApp</span>
                   </a>
                 </div>
               </div>
 
+              {/* Correo */}
               <div
                 className="rounded-2xl p-5 flex items-start gap-4"
                 style={{ background: "white", border: "1px solid rgba(0,180,200,0.15)" }}
@@ -200,15 +189,16 @@ export default function Contacto() {
                     Correo electrónico
                   </p>
                   <a
-                    href="mailto:info@cimdol.com.co"
+                    href="mailto:citas.cimdol@gmail.com"
                     className="text-sm font-semibold text-[#1B3A6B] hover:text-[#00B4C8] transition-colors"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    info@cimdol.com.co
+                    citas.cimdol@gmail.com
                   </a>
                 </div>
               </div>
 
+              {/* Dirección */}
               <div
                 className="rounded-2xl p-5 flex items-start gap-4"
                 style={{ background: "white", border: "1px solid rgba(0,180,200,0.15)" }}
@@ -230,13 +220,46 @@ export default function Contacto() {
                     className="text-sm font-semibold text-[#1B3A6B]"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
-                    Calle 5N # 20-29
+                    Cl. 17 Nte. #9-99, Comuna 1
                   </p>
                   <p
                     className="text-sm text-gray-500"
                     style={{ fontFamily: "'DM Sans', sans-serif" }}
                   >
                     Popayán, Cauca, Colombia
+                  </p>
+                </div>
+              </div>
+
+              {/* Horario */}
+              <div
+                className="rounded-2xl p-5 flex items-start gap-4"
+                style={{ background: "white", border: "1px solid rgba(0,180,200,0.15)" }}
+              >
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: "rgba(0, 180, 200, 0.12)" }}
+                >
+                  <Clock size={18} style={{ color: "#00B4C8" }} />
+                </div>
+                <div>
+                  <p
+                    className="text-gray-500 text-xs mb-1"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    Horario de atención
+                  </p>
+                  <p
+                    className="text-sm font-semibold text-[#1B3A6B]"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    Lunes a viernes
+                  </p>
+                  <p
+                    className="text-sm text-gray-500"
+                    style={{ fontFamily: "'DM Sans', sans-serif" }}
+                  >
+                    7:00am – 12:30pm &nbsp;|&nbsp; 2:00pm – 5:30pm
                   </p>
                 </div>
               </div>
@@ -260,7 +283,7 @@ export default function Contacto() {
                   { icon: Youtube, href: "https://youtube.com", label: "YouTube", color: "#FF0000" },
                   {
                     icon: MessageCircle,
-                    href: "https://wa.me/573167246758",
+                    href: "https://wa.me/573022725382",
                     label: "WhatsApp",
                     color: "#25D366",
                   },
@@ -309,53 +332,29 @@ export default function Contacto() {
                 Para presentar una petición, queja o reclamo formal, por favor contáctenos a través de nuestro correo oficial o diríjase a nuestras instalaciones. Respondemos dentro de los términos legales establecidos (15 días hábiles).
               </p>
               <a
-                href="mailto:pqr@cimdol.com.co"
+                href="mailto:cimdolcolombia@gmail.com"
                 className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-[#007a8c]"
                 style={{ color: "#00B4C8", fontFamily: "'DM Sans', sans-serif" }}
               >
                 <Mail size={14} />
-                pqr@cimdol.com.co
+                cimdolcolombia@gmail.com
               </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Map placeholder */}
-      <section
-        className="h-64 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #e8f4f8, #d1eef5)" }}
-      >
-        <div className="absolute inset-0 flex items-center justify-center flex-col gap-3">
-          <div
-            className="w-12 h-12 rounded-full flex items-center justify-center"
-            style={{ background: "rgba(0, 180, 200, 0.15)" }}
-          >
-            <MapPin size={24} style={{ color: "#00B4C8" }} />
-          </div>
-          <p
-            className="text-[#1B3A6B] font-semibold text-sm"
-            style={{ fontFamily: "'DM Sans', sans-serif" }}
-          >
-            Calle 5N # 20-29, Popayán, Cauca, Colombia
-          </p>
-          <a
-            href="https://maps.google.com/?q=Popayán+Cauca+Colombia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-full text-sm font-medium text-white transition-opacity hover:opacity-90"
-            style={{ background: "#1B3A6B", fontFamily: "'DM Sans', sans-serif" }}
-          >
-            Ver en Google Maps
-          </a>
-        </div>
-        {/* Decorative grid lines */}
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: "linear-gradient(rgba(0,180,200,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,200,0.3) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
+      {/* Map */}
+      <section className="h-72 relative overflow-hidden">
+        <iframe
+          src="https://maps.google.com/maps?q=Cl+17+Norte+9-99+Popayan+Cauca+Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0, display: "block" }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Ubicación CIMDOL"
         />
       </section>
     </div>
