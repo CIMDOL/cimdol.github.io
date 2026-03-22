@@ -1,28 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
-      <title>CIMDOL</title>
-      <!-- GitHub Pages SPA redirect handler -->
-      <script type="text/javascript">
-        (function(l) {
-          if (l.search[1] === '/' ) {
-            var decoded = l.search.slice(1).split('&').map(function(s) {
-              return s.replace(/~and~/g, '&')
-            }).join('?');
-            window.history.replaceState(null, null,
-                l.pathname.slice(0, -1) + decoded + l.hash
-            );
-          }
-        }(window.location))
-      </script>
-    </head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/src/assets/favicon.png" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
+    <!-- SEO principal -->
+    <title>CIMDOL — Centro Integral para el Manejo del Dolor | Popayán</title>
+    <meta name="description" content="CIMDOL es el centro de referencia en el suroccidente colombiano para el manejo del dolor crónico. Especialistas en procedimientos intervencionistas en Popayán, Cauca. Llámanos: 316 246 758." />
+    <meta name="keywords" content="manejo del dolor, dolor crónico, medicina del dolor, Popayán, Cauca, Colombia, CIMDOL, bloqueos espinales, neuroestimulación, plasma rico en plaquetas, toxina botulínica" />
+    <meta name="author" content="CIMDOL SAS" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cimdol.github.io/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cimdol.github.io/" />
+    <meta property="og:title" content="CIMDOL — Centro Integral para el Manejo del Dolor" />
+    <meta property="og:description" content="Centro de referencia en el suroccidente colombiano para el manejo del dolor crónico. Especialistas en procedimientos intervencionistas en Popayán, Cauca." />
+    <meta property="og:image" content="https://cimdol.github.io/og-image.jpg" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="CIMDOL" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CIMDOL — Centro Integral para el Manejo del Dolor" />
+    <meta name="twitter:description" content="Centro de referencia en el suroccidente colombiano para el manejo del dolor crónico. Especialistas en procedimientos intervencionistas en Popayán, Cauca." />
+    <meta name="twitter:image" content="https://cimdol.github.io/og-image.jpg" />
+
+    <!-- Datos estructurados JSON-LD (Google rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "CIMDOL — Centro Integral para el Manejo del Dolor",
+      "alternateName": "CIMDOL SAS",
+      "url": "https://cimdol.github.io",
+      "logo": "https://cimdol.github.io/src/assets/favicon.png",
+      "description": "Centro de referencia en el suroccidente colombiano para el manejo del dolor crónico con más de 15 años de experiencia. Procedimientos mínimamente invasivos y de vanguardia tecnológica.",
+      "telephone": ["+573162467580", "+573022725382"],
+      "email": "citas.cimdol@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 17 Nte. #9-99, Comuna 1",
+        "addressLocality": "Popayán",
+        "addressRegion": "Cauca",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "2.4448",
+        "longitude": "-76.6147"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "12:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "14:00",
+          "closes": "17:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com",
+        "https://www.instagram.com"
+      ],
+      "medicalSpecialty": "Pain Medicine",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Plasma Rico en Plaquetas (PRP)" },
+        { "@type": "MedicalProcedure", "name": "Bloqueos Espinales" },
+        { "@type": "MedicalProcedure", "name": "Neuroestimulación Espinal" },
+        { "@type": "MedicalProcedure", "name": "Toxina Botulínica" },
+        { "@type": "MedicalProcedure", "name": "Vertebroplastia" }
+      ]
+    }
+    </script>
+
+    <!-- GitHub Pages SPA redirect handler -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
