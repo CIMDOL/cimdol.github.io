@@ -1,9 +1,16 @@
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { Home, ArrowLeft } from "lucide-react";
+import { SEOMeta } from "../components/SEOMeta";
 
 export default function NotFound() {
   return (
+    <>
+      <SEOMeta
+        title="Página no encontrada | CIMDOL"
+        description="La página que buscas no existe."
+        noindex
+      />
     <div
       className="min-h-screen flex flex-col items-center justify-center text-center px-4"
       style={{
@@ -69,5 +76,6 @@ export default function NotFound() {
         </div>
       </motion.div>
     </div>
+    </>
   );
 }

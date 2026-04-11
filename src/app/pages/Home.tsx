@@ -20,6 +20,7 @@ import { procedures } from "../data/procedures";
 import { ProcedureCard } from "../components/ProcedureCard";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import calvache3 from "../../assets/medicos/drAndres/calvache3.webp";
+import { SEOMeta } from "../components/SEOMeta";
 
 
 
@@ -57,6 +58,22 @@ const features = [
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
+      <SEOMeta
+        title="CIMDOL — Centro Integral para el Manejo del Dolor | Popayán"
+        description="CIMDOL es el centro de referencia en el suroccidente colombiano para el manejo del dolor crónico. Especialistas en procedimientos intervencionistas en Popayán, Cauca. Llámanos: 316 246 758."
+        canonical="/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "CIMDOL — Centro Integral para el Manejo del Dolor",
+          "url": "https://cimdol.co/",
+          "description": "Centro de referencia en el suroccidente colombiano para el manejo del dolor crónico.",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cimdol.co/" }]
+          }
+        }}
+      />
       {/* Hero */}
       <HeroSection
         badge="Popayán, Colombia"

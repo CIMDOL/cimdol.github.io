@@ -2,10 +2,32 @@ import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, MessageCircle, FileText } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import fachada1 from "@assets/medicos/grupales/grupalesfach1.webp";
+import { SEOMeta } from "../components/SEOMeta";
 
 export default function Contacto() {
   return (
     <div className="overflow-x-hidden pt-20">
+      <SEOMeta
+        title="Contacto y Citas | CIMDOL — Manejo del Dolor Popayán"
+        description="Agenda tu cita en CIMDOL. Cl. 17 Nte. #9-99, Popayán. Tel: 316 246 758. WhatsApp: 302 272 5382. Horario: Lun–Vie 7:00am–12:30pm y 2:00pm–5:30pm."
+        canonical="/contacto"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Contacto — CIMDOL",
+            "url": "https://cimdol.co/contacto"
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cimdol.co/" },
+              { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://cimdol.co/contacto" }
+            ]
+          }
+        ]}
+      />
       {/* Split Hero */}
       <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
         {/* Left: Banner with doctor */}

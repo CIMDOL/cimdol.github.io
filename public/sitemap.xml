@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Páginas principales -->
   <url>
     <loc>https://cimdol.co/</loc>
     <changefreq>monthly</changefreq>
@@ -13,11 +15,64 @@
   <url>
     <loc>https://cimdol.co/procedimientos</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cimdol.co/contacto</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Procedimientos individuales -->
+  <url>
+    <loc>https://cimdol.co/procedimientos/plasma-rico-plaquetas</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/bloqueos-miofasciales-articulares</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/viscosuplement-acido-hialuronico</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/bloqueos-nervios-somaticos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/bloqueos-plexos-simpaticos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/bloqueos-espinales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/neuroestimulacion-espinal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/bombas-intratecales</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/toxina-botulinica</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cimdol.co/procedimientos/vertebroplastia-cifoplastia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

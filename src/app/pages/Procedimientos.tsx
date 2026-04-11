@@ -5,12 +5,35 @@ import { ProcedureCard } from "../components/ProcedureCard";
 import { procedures, type Procedure } from "../data/procedures";
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { SEOMeta } from "../components/SEOMeta";
 
 export default function Procedimientos() {
   const [selectedProcedure, setSelectedProcedure] = useState<Procedure | null>(null);
 
   return (
     <div className="overflow-x-hidden pt-20">
+      <SEOMeta
+        title="Procedimientos para el Dolor | CIMDOL Popayán"
+        description="Más de 10 procedimientos intervencionistas especializados: PRP, bloqueos espinales, neuroestimulación, toxina botulínica, vertebroplastia y más. CIMDOL, Popayán."
+        canonical="/procedimientos"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Procedimientos para el Manejo del Dolor — CIMDOL",
+            "url": "https://cimdol.co/procedimientos",
+            "description": "Procedimientos intervencionistas especializados para el dolor crónico en Popayán."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cimdol.co/" },
+              { "@type": "ListItem", "position": 2, "name": "Procedimientos", "item": "https://cimdol.co/procedimientos" }
+            ]
+          }
+        ]}
+      />
       {/* Page Hero */}
       <section
         className="relative py-24 overflow-hidden"

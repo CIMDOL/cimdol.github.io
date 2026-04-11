@@ -5,6 +5,7 @@ import { DoctorCard } from "../components/DoctorCard";
 import { doctors } from "../data/doctors";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import grupal1 from "../../assets/medicos/grupales/grupalesSala1.webp";
+import { SEOMeta } from "../components/SEOMeta";
 
 const values = [
   {
@@ -43,6 +44,28 @@ const achievements = [
 export default function Somos() {
   return (
     <div className="overflow-x-hidden pt-20">
+      <SEOMeta
+        title="Quiénes Somos | CIMDOL — Especialistas en Manejo del Dolor"
+        description="Conoce al equipo de CIMDOL: médicos especialistas en el manejo del dolor crónico con más de 15 años de experiencia en Popayán, Cauca. Misión, visión y valores."
+        canonical="/somos"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Quiénes Somos — CIMDOL",
+            "url": "https://cimdol.co/somos",
+            "description": "Equipo médico especializado en el manejo del dolor crónico en Popayán."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cimdol.co/" },
+              { "@type": "ListItem", "position": 2, "name": "Quiénes Somos", "item": "https://cimdol.co/somos" }
+            ]
+          }
+        ]}
+      />
       {/* Page Hero */}
       <section
         className="relative py-24 overflow-hidden"
