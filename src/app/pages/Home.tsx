@@ -19,7 +19,7 @@ import { doctors } from "../data/doctors";
 import { procedures } from "../data/procedures";
 import { ProcedureCard } from "../components/ProcedureCard";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import calvache3 from "../../assets/medicos/drAndres/calvache3.jpg";
+import calvache3 from "../../assets/medicos/drAndres/calvache3.webp";
 
 
 

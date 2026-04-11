@@ -4,7 +4,7 @@ import { CheckCircle, Target, Eye, Heart, ArrowRight } from "lucide-react";
 import { DoctorCard } from "../components/DoctorCard";
 import { doctors } from "../data/doctors";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import grupal1 from "../../assets/medicos/grupales/grupalesSala1.jpg";
+import grupal1 from "../../assets/medicos/grupales/grupalesSala1.webp";
 
 const values = [
   {

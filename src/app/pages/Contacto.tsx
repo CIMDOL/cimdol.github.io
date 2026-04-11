@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, MessageCircle, FileText } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import fachada1 from "@assets/medicos/grupales/grupalesfach1.jpg";
+import fachada1 from "@assets/medicos/grupales/grupalesfach1.webp";
 
 export default function Contacto() {
   return (

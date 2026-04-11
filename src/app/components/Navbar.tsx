@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Facebook, Instagram, Youtube } from "lucide-react";
-import cimdolLogo from "../../assets/logocimdol.png";
+import cimdolLogo from "../../assets/logocimdol.webp";
 
 const navLinks = [
   { label: "Inicio", path: "/" },

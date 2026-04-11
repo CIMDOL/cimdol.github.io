@@ -1,16 +1,16 @@
 //imagenes de Dra. Maria
 //Imagenes de Dr. Andrés
-import calvache1 from '@assets/medicos/drAndres/calvache1.jpg';
-import calvache2 from '@assets/medicos/drAndres/calvache2.jpg';
-import calvache3 from '@assets/medicos/drAndres/calvache3.jpg';
-import calvache4 from '@assets/medicos/drAndres/calvache4.jpg';
+import calvache1 from '@assets/medicos/drAndres/calvache1.webp';
+import calvache2 from '@assets/medicos/drAndres/calvache2.webp';
+import calvache3 from '@assets/medicos/drAndres/calvache3.webp';
+import calvache4 from '@assets/medicos/drAndres/calvache4.webp';
 //imágenes de Dr. Jahir
-import drJahir1 from '@assets/medicos/drJahir/jahir1.jpg';
-import drJahir2 from '@assets/medicos/drJahir/jahir2.jpg';
+import drJahir1 from '@assets/medicos/drJahir/jahir1.webp';
+import drJahir2 from '@assets/medicos/drJahir/jahir2.webp';
 //imágenes de Dr. Farith
-import farith1 from '@assets/medicos/drFarith/farith1.jpg';
+import farith1 from '@assets/medicos/drFarith/farith1.webp';
 //imagenes de Dra. Ana Isabel
-import anai1 from '@assets/medicos/drAnai/anai1.jpg';
+import anai1 from '@assets/medicos/drAnai/anai1.webp';
 
 
 export interface Doctor {

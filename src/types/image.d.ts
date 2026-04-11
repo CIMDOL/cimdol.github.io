@@ -25,4 +25,7 @@ declare module '*.svg' {
   export default value;  
 }  
  
-// Add more formats (e.g., *.webp, *.avif) as needed  
+declare module '*.webp' {
+  const value: string;
+  export default value;
+}

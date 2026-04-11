@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Heart } from "lucide-react";
-import cimdolLogo from "../../assets/logocimdol.png";
+import cimdolLogo from "../../assets/logocimdol.webp";
 
 export function Footer() {
   return (
