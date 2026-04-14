@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // Base URL para GitHub Pages (raíz porque el repo es cimdol.github.io)
   base: '/',
   
   plugins: [
