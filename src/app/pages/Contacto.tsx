@@ -361,6 +361,16 @@ export default function Contacto() {
                 <Mail size={14} />
                 cimdolcolombia@gmail.com
               </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc0czYYkR2WCdjrH3ZNA1_aG_s3dlT2dFO96FhYQ7hU-XM54A/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-semibold mt-3 transition-colors hover:text-[#007a8c]"
+                style={{ color: "#00B4C8", fontFamily: "'DM Sans', sans-serif", display: "flex" }}
+              >
+                <FileText size={14} />
+                Formulario de PQR's
+              </a>
             </div>
           </motion.div>
         </div>
