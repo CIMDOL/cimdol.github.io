@@ -300,8 +300,8 @@ export default function Contacto() {
               </p>
               <div className="flex gap-3">
                 {[
-                  { icon: Facebook, href: "https://facebook.com", label: "Facebook", color: "#1877F2" },
-                  { icon: Instagram, href: "https://instagram.com", label: "Instagram", color: "#E4405F" },
+                  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=100039176598881", label: "Facebook", color: "#1877F2" },
+                  { icon: Instagram, href: "https://www.instagram.com/cimdol.sas/", label: "Instagram", color: "#E4405F" },
                   { icon: Youtube, href: "https://youtube.com", label: "YouTube", color: "#FF0000" },
                   {
                     icon: MessageCircle,

@@ -42,9 +42,9 @@ export const procedures: Procedure[] = [
   },
   {
     id: 5,
-    name: "Bloqueos de Plexos Simpáticos",
+    name: "Bloqueos Simpáticos",
     shortDescription: "Tratamiento para dolor visceral y neuropático mediante bloqueo del sistema nervioso simpático.",
-    fullDescription: "Los bloqueos simpáticos se dirigen al sistema nervioso autónomo para tratar dolor visceral, dolor neuropático y síndromes de dolor regional complejo. Incluyen bloqueos del ganglio estrellado, ganglio celiaco y plexo hipogástrico.",
+    fullDescription: "Los bloqueos simpáticos se dirigen al sistema nervioso autónomo para tratar dolor visceral, dolor neuropático y síndromes de dolor regional complejo. Incluyen bloqueos del ganglio estrellado, del ganglio celiaco y del plexo hipogástrico, cada uno dirigido a una región anatómica específica.",
     icon: "⚡",
     slug: "bloqueos-plexos-simpaticos",
   },

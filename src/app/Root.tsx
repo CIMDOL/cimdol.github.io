@@ -1,5 +1,6 @@
 import { Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
@@ -19,6 +20,7 @@ export default function Root() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <SpeedInsights />
     </div>
   );
 }
