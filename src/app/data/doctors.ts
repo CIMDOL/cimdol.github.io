@@ -34,7 +34,7 @@ export const doctors: Doctor[] = [
   // ── Fila 1 ─────────────────────────────────────────────────────────────────
   {
     id: 1,
-    name: "Dr. Andrés Calvache España",
+    name: "Dr. Jose Andrés Calvache",
     specialty: "Medicina del Dolor",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo especialista con más de 15 años de experiencia en el manejo intervencionista del dolor crónico. Formado en las mejores instituciones nacionales e internacionales.",
