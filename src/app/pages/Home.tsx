@@ -84,7 +84,8 @@ export default function Home() {
         secondaryCtaLabel="Nuestros procedimientos"
         secondaryCtaLink="/procedimientos"
         imageUrl={calvache3}
-        imageAlt="Especialista en manejo del dolor CIMDOL"
+        images={[calvache3, ...doctors.map((d) => d.imageUrl).filter(Boolean)]}
+        imageAlt="Especialistas en manejo del dolor CIMDOL"
         variant="home"
       />
 

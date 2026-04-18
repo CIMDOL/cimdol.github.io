@@ -77,7 +77,7 @@ export function Navbar() {
                 fontFamily: "'DM Sans', sans-serif",
               }}
             >
-              Contacto
+              Agéndate
             </a>
           </nav>
 
@@ -155,7 +155,7 @@ export function Navbar() {
                   fontFamily: "'DM Sans', sans-serif",
                 }}
               >
-                Contacto
+                Agéndate
               </a>
               <div className="flex items-center justify-center gap-4 pt-2">
                 <a href="https://facebook.com" className="text-[#1B3A6B]"><Facebook size={20} /></a>

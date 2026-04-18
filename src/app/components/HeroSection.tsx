@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-router";
 import { ArrowRight, Calendar } from "lucide-react";
@@ -11,6 +12,7 @@ interface HeroSectionProps {
   secondaryCtaLabel?: string;
   secondaryCtaLink?: string;
   imageUrl: string;
+  images?: string[];   // carrusel automático si se provee
   imageAlt?: string;
   badge?: string;
   variant?: "home" | "inner";
@@ -24,11 +26,22 @@ export function HeroSection({
   secondaryCtaLabel,
   secondaryCtaLink,
   imageUrl,
+  images,
   imageAlt = "Doctor",
   badge,
   variant = "home",
 }: HeroSectionProps) {
   const isHome = variant === "home";
+  const carousel = images && images.length > 1 ? images : null;
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    if (!carousel) return;
+    const id = setInterval(() => {
+      setActiveIdx((i) => (i + 1) % carousel.length);
+    }, 4000);
+    return () => clearInterval(id);
+  }, [carousel]);
 
   return (
     <section
@@ -201,19 +214,34 @@ export function HeroSection({
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border border-white/10"
             />
 
-            {/* Doctor image */}
+            {/* Doctor image / carousel */}
             <div
               className="relative z-10 w-[360px] h-[440px] rounded-3xl overflow-hidden shadow-2xl"
               style={{ boxShadow: "0 30px 80px rgba(0, 0, 0, 0.4)" }}
             >
-              <ImageWithFallback
-                src={imageUrl}
-                alt={imageAlt}
-                className="w-full h-full object-cover object-top"
-              />
+              {carousel ? (
+                carousel.map((src, i) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt={imageAlt}
+                    className="absolute inset-0 w-full h-full object-cover object-top"
+                    style={{
+                      opacity: i === activeIdx ? 1 : 0,
+                      transition: "opacity 1.2s ease-in-out",
+                    }}
+                  />
+                ))
+              ) : (
+                <ImageWithFallback
+                  src={imageUrl}
+                  alt={imageAlt}
+                  className="w-full h-full object-cover object-top"
+                />
+              )}
               {/* Gradient overlay at bottom */}
               <div
-                className="absolute bottom-0 left-0 right-0 h-1/3"
+                className="absolute bottom-0 left-0 right-0 h-1/3 z-10"
                 style={{
                   background: "linear-gradient(to top, rgba(27, 58, 107, 0.8), transparent)",
                 }}
