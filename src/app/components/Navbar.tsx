@@ -85,7 +85,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <div className="hidden md:flex items-center gap-2">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100039176598881"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full flex items-center justify-center text-[#1B3A6B] hover:bg-[#00B4C8] hover:text-white transition-all duration-200"
@@ -93,7 +93,7 @@ export function Navbar() {
                 <Facebook size={16} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/cimdol.sas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full flex items-center justify-center text-[#1B3A6B] hover:bg-[#00B4C8] hover:text-white transition-all duration-200"
