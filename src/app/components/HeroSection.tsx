@@ -194,7 +194,7 @@ export function HeroSection({
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative flex justify-center lg:justify-end"
+            className="relative flex flex-col items-center sm:flex-row sm:justify-center lg:justify-end"
           >
             {/* Teal circular backdrop */}
             <div
@@ -254,7 +254,7 @@ export function HeroSection({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-2xl flex items-center gap-3 max-w-[200px]"
+                className="mt-4 sm:mt-0 sm:absolute sm:bottom-4 sm:-left-4 bg-white rounded-2xl p-4 shadow-2xl flex items-center gap-3 max-w-[200px]"
               >
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
