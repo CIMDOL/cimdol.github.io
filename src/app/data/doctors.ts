@@ -44,7 +44,7 @@ export const doctors: Doctor[] = [
   {
     id: 2,
     name: "Dra. Ana Isabel Ospina",
-    specialty: "Medicina del Dolor y Cuidados Paliativos",
+    specialty: "Medicina Interna y Reumatología",
     credentials: "Especialista Reumatología",
     bio: "Médica fisiatra con amplia experiencia en rehabilitación del paciente con dolor crónico. Integra tratamientos físicos, funcionales y psicológicos para una recuperación integral.",
     imageUrl: anai1,
