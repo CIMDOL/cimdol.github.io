@@ -4,7 +4,7 @@ import calvache2 from '@assets/medicos/drAndres/calvache2.webp';
 import calvache4 from '@assets/medicos/drAndres/calvache4.webp';
 //Imágenes de Dra. Ana Isabel
 import anai1 from '@assets/medicos/drAnai/anai1.webp';
-//Imágenes de Dr. Faridth Criollo Muñoz
+//Imágenes de Dr. Faridt Criollo Muñoz
 import farith1 from '@assets/medicos/drFarith/farith1.webp';
 //Imágenes de Dra. María Isabel Castañeda Olano
 import drMaria1 from '@assets/medicos/drMaria/drMaria1.webp';
@@ -44,14 +44,14 @@ export const doctors: Doctor[] = [
   {
     id: 2,
     name: "Dra. Ana Isabel Ospina",
-    specialty: "Rehabilitación y Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Especialista Reumatología",
     bio: "Médica fisiatra con amplia experiencia en rehabilitación del paciente con dolor crónico. Integra tratamientos físicos, funcionales y psicológicos para una recuperación integral.",
     imageUrl: anai1,
   },
   {
     id: 3,
-    name: "Dr. Faridth Criollo Muñoz",
+    name: "Dr. Faridt Criollo Muñoz",
     specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Anestesiólogo especialista en procedimientos intervencionistas mínimamente invasivos para el dolor de columna y articulaciones. Formado en centros de referencia internacionales.",
@@ -60,7 +60,7 @@ export const doctors: Doctor[] = [
   {
     id: 4,
     name: "Dra. María Isabel Castañeda Olano",
-    specialty: "Anestesiología del Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médica anestesióloga comprometida con el manejo integral del dolor crónico y la humanización del cuidado médico.",
     imageUrl: drMaria1,
@@ -69,7 +69,7 @@ export const doctors: Doctor[] = [
   {
     id: 5,
     name: "Dr. Jahir Tovar Rivas",
-    specialty: "Anestesiología del Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Anestesiólogo con enfoque en el diagnóstico y tratamiento de síndromes dolorosos neuropáticos. Especialista en terapias avanzadas para el manejo del dolor crónico.",
     imageUrl: drJahir2,
@@ -78,7 +78,7 @@ export const doctors: Doctor[] = [
   {
     id: 6,
     name: "Dr. David Castillo Palacios",
-    specialty: "Anestesiología del Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo comprometido con el manejo integral del dolor crónico y el bienestar de sus pacientes.",
     imageUrl: david1,
@@ -86,7 +86,7 @@ export const doctors: Doctor[] = [
   {
     id: 7,
     name: "Dr. Roberth Ordóñez Ortega",
-    specialty: "Anestesiología del Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo especialista en el tratamiento del dolor crónico con enfoque en procedimientos de vanguardia.",
     imageUrl: roberaA1,
@@ -95,7 +95,7 @@ export const doctors: Doctor[] = [
   {
     id: 8,
     name: "Dr. Nelson Palechor Obando",
-    specialty: "Anestesiología del Dolor",
+    specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo con experiencia en el manejo intervencionista y farmacológico del dolor.",
     imageUrl: nelsonp1,
