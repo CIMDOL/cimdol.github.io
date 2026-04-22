@@ -15,6 +15,7 @@ import drJahir2 from '@assets/medicos/drJahir/jahir2.webp';
 import david1 from '@assets/medicos/drDavid/david1.webp';
 //Imágenes de Dr. Roberth Ordóñez Ortega
 import roberaA1 from '@assets/medicos/drRoberth/drRoberA3.jpg';
+import roberBata from '@assets/medicos/drRoberth/roberBata.jpeg';
 //Imágenes de Dr. Nelson Palechor Obando
 import nelsonp1 from '@assets/medicos/drNelson/nelsonp1.webp';
 
@@ -89,7 +90,7 @@ export const doctors: Doctor[] = [
     specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo especialista en el tratamiento del dolor crónico con enfoque en procedimientos de vanguardia.",
-    imageUrl: roberaA1,
+    imageUrl: roberBata,
     imagePosition: "50% 35%",
   },
   {
