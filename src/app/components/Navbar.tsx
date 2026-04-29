@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Quiénes Somos", path: "/somos" },
   { label: "Procedimientos", path: "/procedimientos" },
   { label: "Contacto", path: "/contacto" },
+  { label: "Indicadores", path: "/indicadores" },
 ];
 
 export function Navbar() {

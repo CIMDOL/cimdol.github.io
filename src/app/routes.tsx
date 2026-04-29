@@ -5,6 +5,7 @@ import Somos from "./pages/Somos";
 import Procedimientos from "./pages/Procedimientos";
 import ProcedimientoDetalle from "./pages/ProcedimientoDetalle";
 import Contacto from "./pages/Contacto";
+import EstadosFinancieros from "./pages/EstadosFinancieros";
 import NotFound from "./pages/NotFound";
 
 export const router = createBrowserRouter([
@@ -17,6 +18,7 @@ export const router = createBrowserRouter([
       { path: "procedimientos", Component: Procedimientos },
       { path: "procedimientos/:slug", Component: ProcedimientoDetalle },
       { path: "contacto", Component: Contacto },
+      { path: "indicadores", Component: EstadosFinancieros },
       { path: "*", Component: NotFound },
     ],
   },
