@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
+import { CondolenceModal } from "./components/CondolenceModal";
 
 export default function Root() {
   const { pathname } = useLocation();
@@ -20,6 +21,7 @@ export default function Root() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <CondolenceModal />
       <SpeedInsights />
     </div>
   );
