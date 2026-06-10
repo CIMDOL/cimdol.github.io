@@ -14,7 +14,7 @@ import drJahir2 from '@assets/medicos/drJahir/jahir2.webp';
 //Imágenes de Dr. David Castillo Palacios
 import david1 from '@assets/medicos/drDavid/david1.webp';
 //Imágenes de Dr. Roberth Ordóñez Ortega
-import roberNuevo from '@assets/medicos/drRoberth/roberNuevo.jpeg';
+import roberBata from '@assets/medicos/drRoberth/roberBata.jpeg';
 //Imágenes de Dr. Nelson Palechor Obando
 import nelsonp1 from '@assets/medicos/drNelson/nelsonp1.webp';
 
@@ -28,7 +28,6 @@ export interface Doctor {
   imageUrl: string;
   images?: string[];
   imagePosition?: string;
-  imageScale?: number; // zoom-out factor <1 for close-up photos
 }
 
 export const doctors: Doctor[] = [
@@ -90,9 +89,8 @@ export const doctors: Doctor[] = [
     specialty: "Medicina del Dolor y Cuidados Paliativos",
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo especialista en el tratamiento del dolor crónico con enfoque en procedimientos de vanguardia.",
-    imageUrl: roberNuevo,
-    imagePosition: "center 15%",
-    imageScale: 0.72,
+    imageUrl: roberBata,
+    imagePosition: "50% 35%",
   },
   {
     id: 8,

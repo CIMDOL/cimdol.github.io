@@ -26,22 +26,18 @@ export function DoctorCard({ doctor, index = 0 }: DoctorCardProps) {
         />
         <div
           className="relative w-44 h-44 rounded-full overflow-hidden border-4 shadow-xl group-hover:shadow-2xl transition-shadow duration-300"
-          style={{ borderColor: "#00B4C8", background: "#fff" }}
+          style={{ borderColor: "#00B4C8" }}
         >
           {doctor.imageUrl ? (
-            <div className="w-full h-full group-hover:scale-105 transition-transform duration-500">
-              <ImageWithFallback
-                src={doctor.imageUrl}
-                alt={doctor.name}
-                className="w-full h-full object-cover"
-                style={{
-                  objectPosition: doctor.imagePosition ?? "top",
-                  imageRendering: "high-quality",
-                  transform: `scale(${doctor.imageScale ?? 1})`,
-                  transformOrigin: "center top",
-                }}
-              />
-            </div>
+            <ImageWithFallback
+              src={doctor.imageUrl}
+              alt={doctor.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              style={{
+                objectPosition: doctor.imagePosition ?? "top",
+                imageRendering: "high-quality",
+              }}
+            />
           ) : (
             <div
               className="w-full h-full flex flex-col items-center justify-center gap-1"
