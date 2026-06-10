@@ -27,7 +27,8 @@ export interface Doctor {
   bio: string;
   imageUrl: string;
   images?: string[];
-  imagePosition?: string; // CSS object-position, default "top"
+  imagePosition?: string;
+  imageScale?: number; // zoom-out factor <1 for close-up photos
 }
 
 export const doctors: Doctor[] = [
@@ -91,6 +92,7 @@ export const doctors: Doctor[] = [
     bio: "Médico anestesiólogo especialista en el tratamiento del dolor crónico con enfoque en procedimientos de vanguardia.",
     imageUrl: roberNuevo,
     imagePosition: "center 15%",
+    imageScale: 0.72,
   },
   {
     id: 8,
