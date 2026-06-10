@@ -12,7 +12,8 @@ interface HeroSectionProps {
   secondaryCtaLabel?: string;
   secondaryCtaLink?: string;
   imageUrl: string;
-  images?: string[];   // carrusel automático si se provee
+  images?: string[];
+  imagePositions?: string[];
   imageAlt?: string;
   badge?: string;
   variant?: "home" | "inner";
@@ -27,13 +28,16 @@ export function HeroSection({
   secondaryCtaLink,
   imageUrl,
   images,
+  imagePositions,
   imageAlt = "Doctor",
   badge,
   variant = "home",
 }: HeroSectionProps) {
   const isHome = variant === "home";
   const carousel = images && images.length > 1 ? images : null;
-  const [activeIdx, setActiveIdx] = useState(0);
+  const [activeIdx, setActiveIdx] = useState(() =>
+    images && images.length > 1 ? Math.floor(Math.random() * images.length) : 0
+  );
 
   useEffect(() => {
     if (!carousel) return;
@@ -225,8 +229,9 @@ export function HeroSection({
                     key={src}
                     src={src}
                     alt={imageAlt}
-                    className="absolute inset-0 w-full h-full object-cover object-top"
+                    className="absolute inset-0 w-full h-full object-cover"
                     style={{
+                      objectPosition: imagePositions?.[i] ?? "center top",
                       opacity: i === activeIdx ? 1 : 0,
                       transition: "opacity 1.2s ease-in-out",
                     }}

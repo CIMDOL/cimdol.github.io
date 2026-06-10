@@ -20,7 +20,15 @@ import { procedures } from "../data/procedures";
 import { ProcedureCard } from "../components/ProcedureCard";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import calvache3 from "../../assets/medicos/drAndres/calvache3.webp";
+import roberNuevo from "../../assets/medicos/drRoberth/roberNuevo.jpeg";
 import { SEOMeta } from "../components/SEOMeta";
+
+const carouselImages = [calvache3, ...doctors.map((d) => d.imageUrl).filter(Boolean), roberNuevo];
+const carouselPositions = [
+  "center top",
+  ...doctors.map((d) => d.imagePosition ?? "center top"),
+  "center 15%",
+];
 
 
 
@@ -84,7 +92,8 @@ export default function Home() {
         secondaryCtaLabel="Nuestros procedimientos"
         secondaryCtaLink="/procedimientos"
         imageUrl={calvache3}
-        images={[calvache3, ...doctors.map((d) => d.imageUrl).filter(Boolean)]}
+        images={carouselImages}
+        imagePositions={carouselPositions}
         imageAlt="Especialistas en manejo del dolor CIMDOL"
         variant="home"
       />
