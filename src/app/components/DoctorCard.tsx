@@ -29,6 +29,18 @@ export function DoctorCard({ doctor, index = 0 }: DoctorCardProps) {
           style={{ borderColor: "#00B4C8" }}
         >
           {doctor.imageUrl ? (
+            doctor.imageBgSize ? (
+              <div
+                className="w-full h-full group-hover:scale-105 transition-transform duration-500"
+                style={{
+                  backgroundImage: `url(${doctor.imageUrl})`,
+                  backgroundSize: doctor.imageBgSize,
+                  backgroundPosition: doctor.imagePosition ?? "center top",
+                  backgroundRepeat: "no-repeat",
+                  backgroundColor: "#f8f8f8",
+                }}
+              />
+            ) : (
             <ImageWithFallback
               src={doctor.imageUrl}
               alt={doctor.name}
@@ -38,6 +50,7 @@ export function DoctorCard({ doctor, index = 0 }: DoctorCardProps) {
                 imageRendering: "high-quality",
               }}
             />
+            )
           ) : (
             <div
               className="w-full h-full flex flex-col items-center justify-center gap-1"
