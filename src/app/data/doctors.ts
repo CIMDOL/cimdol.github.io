@@ -29,7 +29,6 @@ export interface Doctor {
   imageUrl: string;
   images?: string[];
   imagePosition?: string;
-  imageBgSize?: string; // use background-image render for zoom-out control
 }
 
 export const doctors: Doctor[] = [
@@ -92,8 +91,7 @@ export const doctors: Doctor[] = [
     credentials: "Médico Anestesiólogo",
     bio: "Médico anestesiólogo especialista en el tratamiento del dolor crónico con enfoque en procedimientos de vanguardia.",
     imageUrl: roberNuevo,
-    imagePosition: "center 5%",
-    imageBgSize: "82%",
+    imagePosition: "center 18%",
   },
   {
     id: 8,
