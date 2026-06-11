@@ -20,14 +20,14 @@ import { procedures } from "../data/procedures";
 import { ProcedureCard } from "../components/ProcedureCard";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import calvache3 from "../../assets/medicos/drAndres/calvache3.webp";
-import roberNuevo from "@assets/medicos/drRoberth/roberNuevo.jpeg";
+import roberBata from "@assets/medicos/drRoberth/roberBata.jpeg";
 import { SEOMeta } from "../components/SEOMeta";
 
-const carouselImages = [calvache3, ...doctors.map((d) => d.imageUrl).filter(Boolean), roberNuevo];
+const carouselImages = [calvache3, ...doctors.map((d) => d.imageUrl).filter(Boolean), roberBata];
 const carouselPositions = [
   "center top",
   ...doctors.map((d) => d.imagePosition ?? "center top"),
-  "center 15%",
+  "50% 35%",
 ];
 
 
